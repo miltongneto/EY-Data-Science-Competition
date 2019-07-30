@@ -21,6 +21,7 @@ I presenting my project in the Brazilian final and I finished in 4th place. It w
 ### Change grain and become trajectories as characteristics. 
 First, I will explain the most important approach. In the initial data set, the grain is the trajectory. But each prediction was performed to a hash (user or device). So, for build the final data set, I used all trajectories as a sequence, they become features in descending order. The intention is to maintain the order of trajectories in relation to the last ones and give more importance to them.
 
+![Approach](reports/images/change_grain.png)
 Each trajectory has some information witch generates many attributes, or columns, to be more exact. 
 
 ### Feature Engineering
@@ -46,6 +47,8 @@ The features are:
 #### Working with the points:
 With entry and exit points, some features were created, manipulating points and including human knowledge for answer the main question, “the user (hash) is in center”? 
 Remembering that for traj_last some features are not created, because the exit point is unknown.
+
+![Points on Map](reports/images/distance_center_seaborn.png)
 
 - Is the center?
 - Travelled distance
@@ -75,3 +78,9 @@ Parameters:
 - subsample=0.8
 - min_child_weight=4
 - reg_alpha=0.005
+
+### Notes
+
+> - The data set afer preparation phase is on [data/processed/](data/processed/). You can use that if you do not want to wait for data preparation processing time and just want to investigate the modeling phase.
+> - In this repository there are a python script and a notebook. Both do the same thing, but the notebook describes in more details
+> - On [reports/](reports/) there is the challenge manual and the final presentation.
