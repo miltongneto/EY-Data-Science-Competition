@@ -82,5 +82,5 @@ Parameters:
 ### Notes
 
 > - The data set afer preparation phase is on [data/processed/](data/processed/). You can use that if you do not want to wait for data preparation processing time and just want to investigate the modeling phase.
-> - In this repository there are a python script and a notebook. Both do the same thing, but the notebook describes in more details
+> - In this repository there are a python script and a notebook. Both do the same thing, but the notebook describes in more details, but the script is faster.
 > - On [reports/](reports/) there is the challenge manual and the final presentation.
